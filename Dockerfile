@@ -6,10 +6,8 @@ RUN apk add \
     vim \
     bash 
 
-COPY exercises /shellclass/exercises
+COPY folder_name /volume_folder
 
-COPY demos /shellclass/demos
-
-VOLUME /shellclass
+VOLUME /volume_folder
 
 CMD ["sh"]
